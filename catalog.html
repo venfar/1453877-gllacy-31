@@ -13,7 +13,7 @@
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
             <ul class="catalog-menu">
-              <li><a href="blank.html">Новинки<a></li>
+              <li><a href="blank.html">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="blank.html">Щербеты</a></li>
               <li><a href="blank.html">Фруктовый лед</a></li>
@@ -25,17 +25,19 @@
         </ul>
       </nav>
       <ul class="user-menu">
-        <li><button type="button">Поиск</button>
+        <li>
+          <button type="button">Поиск</button>
           <div class="search">
-            <form action="/" method="POST">
+            <form method="POST">
               <label for="search">Поиск</label>
               <input id="search" type="text" name="search" placeholder="Крем-брюле">
             </form>
           </div>
         </li>
-        <li><button type="button">Вход</button>
+        <li>
+          <button type="button">Вход</button>
           <div class="login">
-            <form action="/" method="POST">
+            <form method="POST">
               <label for="login-login">Логин</label>
               <input id="login-login" type="email" name="login" placeholder="email@example.com">
               <label for="login-password">Пароль</label>
@@ -50,7 +52,9 @@
             </form>
           </div>
         </li>
-        <li><button type="button">Пусто</button></li>
+        <li>
+          <button type="button">Пусто</button>
+        </li>
       </ul>
       <div class="work-schedule">
         <p>с 10 до 20, ежедневно</p>
@@ -66,7 +70,7 @@
       <h1>Сливочное мороженое</h1>
       <section class="filter">
         <h2>Фильтр</h2>
-        <form class="filter-form" action="/" method="GET">
+        <form class="filter-form" method="GET">
           <fieldset class="sorting">
             <legend>Сортировка:</legend>
             <select>
@@ -78,7 +82,6 @@
           </fieldset>
           <fieldset class="price-range">
             <legend>Цена: 100 ₽ – 500 ₽</legend>
-            <div class="filter-wrapper">
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
@@ -86,30 +89,27 @@
                 <div class="toggle toggle-min" tabindex="0"></div>
                 <div class="toggle toggle-max" tabindex="0"></div>
               </div>
-            </div>
           </fieldset>
           <fieldset class="fatness">
             <legend>Жирность:</legend>
-            <div class="filter-wrapper">
-              <ul class="fat-filter">
-                <li>
-                  <input type="radio" name="fat-percent" value="0" id="none">
-                  <label for="none">0%</label>
-                </li>
-                <li>
-                  <input type="radio" name="fat-percent" value="10" id="under-10" checked>
-                  <label for="under-10">до 10%</label>
-                </li>
-                <li>
-                  <input type="radio" name="fat-percent" value="30" id="under-30">
-                  <label for="under-30">до 30%</label>
-                </li>
-                <li>
-                  <input type="radio" name="fat-percent" value="+30" id="over-30">
-                  <label for="over-30">выше 30%</label>
-                </li>
-              </ul>
-            </div>
+            <ul class="fat-filter">
+              <li>
+                <input type="radio" name="fat-percent" value="0" id="none">
+                <label for="none">0%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-percent" value="10" id="under-10" checked>
+                <label for="under-10">до 10%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-percent" value="30" id="under-30">
+                <label for="under-30">до 30%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-percent" value="+30" id="over-30">
+                <label for="over-30">выше 30%</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="fillers">
             <legend>Наполнители:</legend>
