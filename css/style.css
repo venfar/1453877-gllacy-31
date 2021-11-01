@@ -948,6 +948,38 @@ img {
   margin-bottom: 7px;
 }
 
+.sorting select {
+  width: 196px;
+  height: 36px;
+  padding: 0 16px;
+  font: inherit;
+  color: var(--basic-white);
+  border: none;
+  background-color: var(--transparent-white);
+  border-radius: 20px;
+  appearance: none;
+}
+
+.sorting select:hover {
+  color: var(--basic-dark);
+}
+
+.sorting select:focus {
+  outline: none;
+}
+
+.sorting select::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5.5px 0 5.5px;
+  border-color: var(--basic-white) transparent transparent transparent;
+}
+
 .range-controls {
   position: relative;
   width: 218px;
@@ -1111,6 +1143,7 @@ img {
 .filter-button {
   width: 144px;
   height: 36px;
+  margin-top: 23px;
   color: var(--basic-white);
   font-size: 16px;
   font-weight: 500;
