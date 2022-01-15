@@ -64,9 +64,13 @@
                 <input id="login-login" type="email" name="login" placeholder="email@example.com">
                 <label class="visually-hidden" for="login-password">Пароль</label>
                 <input id="login-password" type="password" name="password" placeholder="••••••">
-                <button class="btn" type="submit">Войти</button>
-                <a href="blank.html">Забыли пароль?</a>
-                <a href="blank.html">Новая регистрация</a>
+                <div class="login-columns">
+                  <button class="btn" type="submit">Войти</button>
+                  <div>
+                    <a href="blank.html">Забыли пароль?</a>
+                    <a href="blank.html">Новая регистрация</a>
+                  </div>
+                </div>
               </form>
             </div>
           </li>
@@ -140,11 +144,11 @@
             <legend>Наполнители:</legend>
             <ul>
               <li>
-                <input class="visually-hidden filler-input-checkbox" type="checkbox" name="chocolate" id="chocolate">
+                <input class="visually-hidden filler-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
                 <label for="chocolate">шоколадные</label>
               </li>
               <li>
-                <input class="visually-hidden filler-input-checkbox" type="checkbox" name="sugar" id="sugar">
+                <input class="visually-hidden filler-input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
                 <label for="sugar">сахарные присыпки</label>
               </li>
               <li>
